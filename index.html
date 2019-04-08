@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Gradient Background</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Gradient Background Generator</title>
 </head>
-<body id="gradient">
-	<h1>Background Generator</h1>
-	<input class="color1" type="color" name="color1" value="#00ff00">
-	<input class="color2" type="color" name="color2" value="#ff0000">
-	<h2>Current CSS Background</h2>
-	<h3></h3>
+
+<body>
+
+	<h1 class="main-header">Background Generator</h1>
+	<div class="form">
+		<input class="form-item num-input" type="number" value="2" min="2">
+		<select class="form-item options">
+			<option value="to top">to top</option>
+			<option value="to right" selected>to right</option>
+			<option value="to top right">to top right</option>
+			<option value="to bottom right">to bottom right</option>
+		</select>
+		<button class="form-item enterBtn">Enter</button>
+	</div>
+
+
+	<div class="color-inputs-container"></div>
+
+	<div class="value-container">
+		<p>click gradients value to copy <i class="fas fa-copy"></i></p>
+		<p class="p-tag view">Copied!</p>
+		<h3></h3>
+	</div>
+
 	<script type="text/javascript" src="script.js"></script>
+
 </body>
+
 </html>
